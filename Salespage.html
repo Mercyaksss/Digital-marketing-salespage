@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Digital Marketing Content Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #e8e8e8;
+            line-height: 1.65;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        .hero {
+            padding: 100px 0 80px;
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            line-height: 1.15;
+            margin-bottom: 20px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        .script-text {
+            font-family: 'Dancing Script', cursive;
+            font-size: 42px;
+            font-weight: 400;
+            color: #ffffff;
+            margin: 16px 0 28px;
+            display: block;
+            font-style: italic;
+        }
+
+        .highlight {
+            background-color: #d4a03a;
+            color: #000000;
+            padding: 2px 8px;
+            font-weight: 700;
+        }
+
+        .subheadline {
+            font-size: 18px;
+            color: #b8b8b8;
+            font-weight: 400;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            max-width: 600px;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            line-height: 1.25;
+            margin-bottom: 24px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            margin-bottom: 16px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: #c8c8c8;
+            font-size: 16px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #d4a03a;
+            color: #000000;
+            padding: 16px 40px;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background-color: #c49234;
+        }
+
+        .cta-support {
+            display: block;
+            margin-top: 14px;
+            font-size: 14px;
+            color: #888888;
+        }
+
+        .problem-section,
+        .agitation-section,
+        .solution-section {
+            border-top: 1px solid #2a2a2a;
+        }
+
+        .whats-inside {
+            background-color: #222222;
+            padding: 40px 32px;
+            margin: 50px 0;
+        }
+
+        .whats-inside h2 {
+            margin-bottom: 32px;
+        }
+
+        .whats-inside ul {
+            list-style: none;
+        }
+
+        .whats-inside li {
+            margin-bottom: 20px;
+            padding-left: 28px;
+            position: relative;
+            color: #c8c8c8;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .whats-inside li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #d4a03a;
+            font-weight: 700;
+        }
+
+        .for-who-section {
+            padding: 60px 0;
+        }
+
+        .for-who-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .for-who-column {
+            background-color: #222222;
+            padding: 32px 28px;
+        }
+
+        .for-who-column h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .for-who-column ul {
+            list-style: none;
+        }
+
+        .for-who-column li {
+            margin-bottom: 14px;
+            padding-left: 20px;
+            position: relative;
+            color: #b8b8b8;
+            font-size: 15px;
+        }
+
+        .for-who-column li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            font-size: 20px;
+            line-height: 1;
+            color: #d4a03a;
+        }
+
+        .creator-note {
+            background-color: #222222;
+            border-left: 4px solid #d4a03a;
+            padding: 36px 32px;
+            margin: 50px 0;
+        }
+
+        .creator-note .signature {
+            font-family: 'Dancing Script', cursive;
+            font-size: 28px;
+            color: #d4a03a;
+            margin-top: 16px;
+            display: block;
+        }
+
+        .creator-note p {
+            font-size: 16px;
+            line-height: 1.65;
+            color: #d8d8d8;
+            margin-bottom: 0;
+        }
+
+        .final-cta {
+            text-align: center;
+            padding: 80px 0 100px;
+            border-top: 1px solid #2a2a2a;
+        }
+
+        .final-cta h2 {
+            margin-bottom: 16px;
+        }
+
+        .final-cta p {
+            font-size: 17px;
+            margin-bottom: 36px;
+            color: #b8b8b8;
+        }
+
+        .trust-line {
+            margin-top: 16px;
+            font-size: 14px;
+            color: #888888;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            .script-text {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 26px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            .subheadline {
+                font-size: 16px;
+            }
+
+            section {
+                padding: 50px 0;
+            }
+
+            .hero {
+                padding: 70px 0 60px;
+            }
+
+            .whats-inside {
+                padding: 32px 24px;
+            }
+
+            .for-who-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .for-who-column {
+                padding: 28px 24px;
+            }
+
+            .creator-note {
+                padding: 28px 24px;
+            }
+
+            .final-cta {
+                padding: 70px 0 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Digital Marketing<br>Without The Hype</h1>
+            <span class="script-text">this is it</span>
+            <p class="subheadline">Simple systems. No hype. How online income <span class="highlight">actually</span> works for beginners who don't know where to start.</p>
+            <a href="#" class="cta-button">Get The Guide</a>
+            <span class="cta-support">free guide included</span>
+        </div>
+    </section>
+
+    <section class="problem-section">
+        <div class="container">
+            <h2>You're stuck in research mode</h2>
+            <p>You watch the tutorials. You save the carousels. You bookmark the threads.</p>
+            <p>But when it's time to actually sit down and create something, you freeze.</p>
+            <p>What platform do I use? What do I even post about? How do I make this look professional when I don't want to show my face?</p>
+            <p>The advice is either too basic or too advanced. No one's showing you the <span class="highlight">actual steps</span> between "start posting" and "build an audience."</p>
+            <p>So you keep scrolling. Learning more. Doing less.</p>
+        </div>
+    </section>
+
+    <section class="agitation-section">
+        <div class="container">
+            <h2>And every week that goes by, you feel further behind</h2>
+            <p>You see faceless accounts growing. People starting after you who are already monetizing. And you're still trying to figure out what your first post should be.</p>
+            <p>It's not the lack of progress that hurts. It's the mental loop.</p>
+            <p>The guilt. The overthinking. The feeling like maybe you're just not cut out for this.</p>
+            <p>But here's the thing: you don't need more information. You need <span class="highlight">clarity</span>. You need a system that makes sense for someone starting from zero.</p>
+        </div>
+    </section>
+
+    <section class="solution-section">
+        <div class="container">
+            <h2>This guide is that system</h2>
+            <p>The Beginner Digital Marketing Content Guide walks you through exactly what to create, how to structure it, and how to stay consistent without burning out.</p>
+            <p>No fluff. No "just be authentic" advice with no follow-up. Just a clear path from idea to published content.</p>
+            <p>You'll learn what actually matters when you're starting out. What to focus on. What to ignore. And how to build something real without showing your face or having any audience yet.</p>
+            <p>This is for faceless creators. For people who want simple systems. For beginners who are tired of the hype and just want to know what works.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="whats-inside">
+            <h2>What's inside</h2>
+            <ul>
+                <li>How to pick your first content format and platform without second-guessing everything</li>
+                <li>A simple structure you can reuse every single time you create</li>
+                <li>The difference between content that gets scrolled past and content that actually connects</li>
+                <li>How to plan an entire month of content in under an hour</li>
+                <li>What to do when you run out of ideas or lose momentum</li>
+                <li>A beginner workflow for staying consistent that doesn't require 10 hours a day</li>
+                <li>How to repurpose one idea across multiple platforms without recreating everything</li>
+                <li>Real examples and templates you can adapt to your own voice</li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="for-who-section">
+        <div class="container">
+            <h2>Who this is for</h2>
+            <div class="for-who-grid">
+                <div class="for-who-column">
+                    <h3>This is for you if:</h3>
+                    <ul>
+                        <li>You're brand new to digital marketing</li>
+                        <li>You're a faceless creator or don't want to be on camera</li>
+                        <li>You're overwhelmed by all the conflicting advice</li>
+                        <li>You want simple systems, not complex strategies</li>
+                        <li>You're ready to start but don't know what to create first</li>
+                        <li>You value clarity over hype</li>
+                    </ul>
+                </div>
+                <div class="for-who-column">
+                    <h3>Not for you if:</h3>
+                    <ul>
+                        <li>You already have a content system that works</li>
+                        <li>You're looking for advanced growth hacks</li>
+                        <li>You want "go viral in 7 days" shortcuts</li>
+                        <li>You need platform-specific algorithm tricks</li>
+                        <li>You're not willing to show up consistently</li>
+                        <li>You prefer high-energy, hype-driven content</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="creator-note">
+            <p>I made this guide because I was tired of watching beginners drown in noise. Digital marketing doesn't need to be this complicated. You don't need a huge personality, a viral moment, or thousands of dollars to start building something real. You just need a clear system and someone to show you what actually matters. This guide is what I wish someone had given me when I was staring at a blank screen with no idea where to start. No hype. Just honesty.</p>
+            <span class="signature">- Zina</span>
+        </div>
+    </div>
+
+    <section class="final-cta">
+        <div class="container">
+            <h2>Start creating with confidence</h2>
+            <p>Get clear. Get consistent. Build your content system today.</p>
+            <a href="#" class="cta-button">Get The Guide</a>
+            <p class="trust-line">simple systems for faceless creators</p>
+        </div>
+    </section>
+
+</body>
+</html>
