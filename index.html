@@ -28,13 +28,102 @@
             padding: 0 20px;
         }
 
+        .wide-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
         section {
             padding: 60px 0;
         }
 
         .hero {
             padding: 100px 0 80px;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-content {
             text-align: left;
+        }
+
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .guide-mockup {
+            background: linear-gradient(135deg, #2a2a2a 0%, #1f1f1f 100%);
+            border: 1px solid #333333;
+            padding: 48px 32px;
+            text-align: center;
+            max-width: 340px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .guide-mockup-title {
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ffffff;
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+
+        .guide-mockup-subtitle {
+            font-size: 16px;
+            color: #d4a03a;
+            font-family: 'Dancing Script', cursive;
+            margin-bottom: 24px;
+        }
+
+        .guide-mockup-pages {
+            background-color: #2f2f2f;
+            height: 200px;
+            border: 1px solid #404040;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666666;
+            font-size: 14px;
+        }
+
+        .guide-preview {
+            background: linear-gradient(135deg, #252525 0%, #1d1d1d 100%);
+            border: 1px solid #2f2f2f;
+            padding: 24px;
+            text-align: center;
+            max-width: 280px;
+            margin: 40px auto;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .guide-preview-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #d4a03a;
+            margin-bottom: 12px;
+        }
+
+        .guide-preview-pages {
+            background-color: #2a2a2a;
+            height: 120px;
+            border: 1px solid #353535;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666666;
+            font-size: 12px;
         }
 
         h1 {
@@ -117,6 +206,11 @@
             background-color: #c49234;
         }
 
+        .cta-wrapper {
+            text-align: center;
+            margin: 50px 0;
+        }
+
         .cta-support {
             display: block;
             margin-top: 14px;
@@ -161,6 +255,44 @@
             font-weight: 700;
         }
 
+        .social-proof-section {
+            padding: 60px 0;
+            background-color: #1f1f1f;
+            border-top: 1px solid #2a2a2a;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        .social-proof-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .proof-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+
+        .proof-item {
+            background-color: #252525;
+            padding: 28px 24px;
+            border-left: 3px solid #d4a03a;
+        }
+
+        .proof-item p {
+            font-size: 16px;
+            color: #d8d8d8;
+            margin: 0;
+        }
+
+        .proof-note {
+            text-align: center;
+            font-size: 14px;
+            color: #888888;
+            margin-top: 32px;
+        }
+
         .for-who-section {
             padding: 60px 0;
         }
@@ -201,6 +333,37 @@
             font-size: 20px;
             line-height: 1;
             color: #d4a03a;
+        }
+
+        .faq-section {
+            padding: 60px 0;
+            background-color: #1f1f1f;
+            border-top: 1px solid #2a2a2a;
+        }
+
+        .faq-section h2 {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .faq-item {
+            background-color: #252525;
+            padding: 28px 32px;
+            margin-bottom: 20px;
+            border-left: 3px solid #d4a03a;
+        }
+
+        .faq-question {
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 12px;
+        }
+
+        .faq-answer {
+            font-size: 16px;
+            color: #c8c8c8;
+            margin: 0;
         }
 
         .creator-note {
@@ -248,6 +411,19 @@
         }
 
         @media (max-width: 768px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero-visual {
+                order: -1;
+            }
+
+            .guide-mockup {
+                max-width: 100%;
+            }
+
             h1 {
                 font-size: 36px;
             }
@@ -296,18 +472,38 @@
             .final-cta {
                 padding: 70px 0 80px;
             }
+
+            .proof-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .faq-item {
+                padding: 24px 20px;
+            }
         }
     </style>
 </head>
 <body>
 
     <section class="hero">
-        <div class="container">
-            <h1>Digital Marketing<br>Without The Hype</h1>
-            <span class="script-text">this is it</span>
-            <p class="subheadline">Simple systems. No hype. How online income <span class="highlight">actually</span> works for beginners who don't know where to start.</p>
-            <a href="#" class="cta-button">Get The Guide</a>
-            <span class="cta-support">free guide included</span>
+        <div class="wide-container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>Digital Marketing<br>Without The Hype</h1>
+                    <span class="script-text">this is it</span>
+                    <p class="subheadline">Simple systems. No hype. How online income <span class="highlight">actually</span> works for beginners who don't know where to start.</p>
+                    <a href="#" class="cta-button">Get the $5 Guide</a>
+                    <span class="cta-support">Instant download • Beginner-friendly</span>
+                </div>
+                <div class="hero-visual">
+                    <div class="guide-mockup">
+                        <div class="guide-mockup-title">Digital Marketing Without the Hype</div>
+                        <div class="guide-mockup-subtitle">A beginner's clarity guide</div>
+                        <div class="guide-mockup-pages">Guide Preview</div>
+                        <p style="font-size: 14px; color: #888888; margin: 0;">Simple systems for faceless creators</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -319,6 +515,11 @@
             <p>What platform do I use? What do I even post about? How do I make this look professional when I don't want to show my face?</p>
             <p>The advice is either too basic or too advanced. No one's showing you the <span class="highlight">actual steps</span> between "start posting" and "build an audience."</p>
             <p>So you keep scrolling. Learning more. Doing less.</p>
+            
+            <div class="cta-wrapper">
+                <a href="#" class="cta-button">This is exactly what I need</a>
+                <span class="cta-support">Get the $5 guide</span>
+            </div>
         </div>
     </section>
 
@@ -339,6 +540,11 @@
             <p>No fluff. No "just be authentic" advice with no follow-up. Just a clear path from idea to published content.</p>
             <p>You'll learn what actually matters when you're starting out. What to focus on. What to ignore. And how to build something real without showing your face or having any audience yet.</p>
             <p>This is for faceless creators. For people who want simple systems. For beginners who are tired of the hype and just want to know what works.</p>
+
+            <div class="guide-preview">
+                <div class="guide-preview-label">Inside the guide</div>
+                <div class="guide-preview-pages">Content preview</div>
+            </div>
         </div>
     </section>
 
@@ -356,7 +562,30 @@
                 <li>Real examples and templates you can adapt to your own voice</li>
             </ul>
         </div>
+
+        <div class="cta-wrapper">
+            <a href="#" class="cta-button">Download the Guide for $5</a>
+            <span class="cta-support">No upsells. No fluff. Just clarity.</span>
+        </div>
     </div>
+
+    <section class="social-proof-section">
+        <div class="wide-container">
+            <h2>Why this guide works</h2>
+            <div class="proof-grid">
+                <div class="proof-item">
+                    <p>Built from real beginner mistakes and real content workflows.</p>
+                </div>
+                <div class="proof-item">
+                    <p>Designed for creators starting with zero clarity and zero audience.</p>
+                </div>
+                <div class="proof-item">
+                    <p>Created to replace information overload with a simple system.</p>
+                </div>
+            </div>
+            <p class="proof-note">This guide was created after seeing how confused beginners feel online.</p>
+        </div>
+    </section>
 
     <section class="for-who-section">
         <div class="container">
@@ -385,6 +614,11 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="cta-wrapper">
+                <a href="#" class="cta-button">Get the Guide for $5</a>
+                <span class="cta-support">Instant access</span>
+            </div>
         </div>
     </section>
 
@@ -395,12 +629,38 @@
         </div>
     </div>
 
+    <section class="faq-section">
+        <div class="container">
+            <h2>Common Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Is this guide beginner-friendly?</div>
+                <p class="faq-answer">Yes. This guide was created specifically for people who are starting from zero. No experience needed. No confusing jargon. Just clear steps.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Do I need money or experience to start?</div>
+                <p class="faq-answer">No. The systems in this guide work whether you have a budget or not. You don't need paid tools, a following, or prior experience. Just a willingness to create consistently.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Is this really only $5?</div>
+                <p class="faq-answer">Yes. No hidden costs. No upsells. Just the guide. I wanted this to be accessible to anyone starting out.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I receive the guide?</div>
+                <p class="faq-answer">Instant download. After purchase, you'll get immediate access to the PDF guide. You can download it and start reading right away.</p>
+            </div>
+        </div>
+    </section>
+
     <section class="final-cta">
         <div class="container">
             <h2>Start creating with confidence</h2>
             <p>Get clear. Get consistent. Build your content system today.</p>
-            <a href="#" class="cta-button">Get The Guide</a>
-            <p class="trust-line">simple systems for faceless creators</p>
+            <a href="#" class="cta-button">Get Digital Marketing Without the Hype — $5</a>
+            <p class="trust-line">Instant download • Start today</p>
         </div>
     </section>
 
