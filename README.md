@@ -93,7 +93,7 @@ This isn't just a portfolio piece - it's a live business asset that:
 ## 👤 Author
 
 **Mercy Yakubu**
-- Portfolio: [your-portfolio-link]
+- Portfolio: [Mercy Yakubu](https://portfolio-bento-grid-ten.vercel.app/)
 - GitHub: [@Mercyaksss](https://github.com/Mercyaksss)
 - Product: [Digital Marketing Without The Hype](https://payhip.com/b/gNTMo)
 
